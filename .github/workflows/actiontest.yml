@@ -29,8 +29,8 @@ jobs:
       - name: nmn intsall, and test
         run: |
             npm ci
-            nmp run build
-            nmp run test 
+            npm run build
+            npm run test 
         env:
             CI: true
       - name: Run a one-line script
