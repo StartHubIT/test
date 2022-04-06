@@ -29,7 +29,12 @@ jobs:
       - name: Unit Testing
         run: |
             npm ci
-            npm run build
-            npm run test 
+            npm run build --if-present
+            npm run test:staging 
         env:
             CI: true
+            
+        
+
+      
+    
