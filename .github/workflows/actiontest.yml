@@ -12,8 +12,8 @@ on:
     
 jobs:
   # This workflow contains a single job called "build"
-  build:
-    name: test_job_a1
+  test_job_a1:
+    name: test ka pehla job hai
     runs-on: ubuntu-latest
     strategy:
         matrix:
@@ -29,15 +29,9 @@ jobs:
             npm ci
             npm run build 
             npm run test
-            
-              Job_abu_2:  
-                   name: test hai ye
-                   runs-on: ubuntu-latest
-                   needs: test_job_a1
-            steps:
-            name: aur pathe
-            run: echo"Heloo brother sup"
-         
-      
-      
-        
+  # This workflow contains a single job called "build"
+  Job_build_2:
+        name: test job hai 
+        runs-on: ubuntu-latest
+        needs: test_job_a1
+          
