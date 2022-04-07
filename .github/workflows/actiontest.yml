@@ -31,12 +31,12 @@ jobs:
             npm run test
             
               Job_abu_2:  
-                  - name: test hai ye
-                    runs-on: ubuntu-latest
-                    needs: test_job_a1
-        
-                     steps:
-            - run: ubuntu-latest
+                   name: test hai ye
+                   runs-on: ubuntu-latest
+                   needs: test_job_a1
+            steps:
+            name: aur pathe
+            run: echo"Heloo brother sup"
          
       
       
