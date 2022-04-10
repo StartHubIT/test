@@ -34,9 +34,9 @@ jobs:
         env:
             CI: true
             
-  jobs2: 
+  After_test_job: 
     runs-on: ubuntu-latest
-    name: Test ki dusri job hai
+    name: Starts after job1 is complete
     needs: [build]
             
     steps:
