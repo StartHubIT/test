@@ -42,4 +42,4 @@ jobs:
     steps:
             - uses: wxdlong/hello-action@v7
               with:
-                who-to-greet: 'Mona the Octocat' 
+                who-to-greet: 'Abubaker the great' 
