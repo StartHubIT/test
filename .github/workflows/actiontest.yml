@@ -34,12 +34,12 @@ jobs:
         env:
             CI: true
             
-  Job_2:
-      
-        name: Test ki dusri job hai
-        needs: [build]
-      
-  steps:
-     - uses: wxdlong/hello-action@v7
-          with:
-            who-to-greet: 'Mona the Octocat'  uses: wxdlong/hello-action@v7
+  jobs2: 
+    runs-on: ubuntu-latest
+    name: Test ki dusri job hai
+    needs: [build]
+            
+    steps:
+            - uses: wxdlong/hello-action@v7
+              with:
+                who-to-greet: 'Mona the Octocat' 
