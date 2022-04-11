@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: testing
+name: Testing
 
 # Controls when the workflow will run
 on:
@@ -11,7 +11,7 @@ on:
     branches: [ main ]
     
 jobs:
-  # This workflow contains a single job called "build"
+ 
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
             node-version: [16.x]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version}}
         uses: actions/setup-node@v3.1.0
@@ -36,10 +36,10 @@ jobs:
             
   After_test_job: 
     runs-on: ubuntu-latest
-    name: Starts after job1 is complete
+    name: Starts after JOB1 is complete
     needs: [build]
             
     steps:
             - uses: wxdlong/hello-action@v7
               with:
-                who-to-greet: 'Abubaker the great' 
+                who-to-greet: 'Test was complete' 
