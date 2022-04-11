@@ -31,9 +31,7 @@ jobs:
             npm ci
             npm run build
             npm run test 
-        env:
-            CI: false
-            
+
   After_test_job: 
     runs-on: ubuntu-latest
     name: Starts after JOB1 is complete
