@@ -32,7 +32,7 @@ jobs:
             npm run build
             npm run test 
         env:
-            CI: true
+            CI: false
             
   After_test_job: 
     runs-on: ubuntu-latest
