@@ -28,9 +28,12 @@ jobs:
               node-version: ${{ matrix.node-version}}
       - name: Unit Testing
         run: |
-         npm init // fill the required things CLI asked
-         npm i express
-          npm i mocha supertest --save-dev
+            npm ci
+            npm run build
+            npm run test
+            npm init // fill the required things CLI asked
+            npm i express
+            npm i mocha supertest 
         env:
             CI: false
                         
