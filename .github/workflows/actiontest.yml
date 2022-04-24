@@ -36,7 +36,7 @@ jobs:
             
   After_test_job: 
     runs-on: ubuntu-latest
-    name: Starts after job1 is complete
+    name: Starts after job1 is completed
     needs: [build]
             
     steps:
